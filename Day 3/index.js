@@ -32,7 +32,6 @@ const symbols = data.map(row => row.map(cell => cell === '.' ? 0 : cell)).flat()
 let sum = 0;
 let sum2 = 0;
 
-// Part One
 for (let i = 0; i < data.length; i++) {
 	for (let j = 0; j < data[i].length; j++) {
 		let number = ''
@@ -52,8 +51,7 @@ for (let i = 0; i < data.length; i++) {
 	}
 }
 
-
-// Part Two
+// Part One
 for (let i = 0; i < data.length; i++) {
 	for (let j = 0; j < data[i].length; j++) {
 		let flag = false
@@ -76,6 +74,7 @@ for (let i = 0; i < data.length; i++) {
 	}
 }
 
+// Part Two
 for (let i = 0; i < data.length; i++) {
 	for (let j = 0; j < data[i].length; j++) {
 		let numberArray = []
