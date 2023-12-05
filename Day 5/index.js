@@ -161,12 +161,12 @@ for (const seed of dataTwo.seeds) {
 for (const stateRange of stateRanges) {
   const converter = dataTwo.converters.find(converter => converter.from === stateRange.state);
   if (converter === undefined) {
-    console.error(`No converter found for state ${stateRange.state}`);
     break;
   }
+  console.log(stateRange)
   let currentRange = stateRange.range;
   const nextRanges = [];
-  
+
   for (const converterRange of converter.ranges) {
 
     if (converterRange.src.start > currentRange.end || converterRange.src.end < currentRange.start) {
