@@ -163,7 +163,7 @@ for (const stateRange of stateRanges) {
   if (converter === undefined) {
     break;
   }
-  console.log(stateRange)
+
   let currentRange = stateRange.range;
   const nextRanges = [];
 
